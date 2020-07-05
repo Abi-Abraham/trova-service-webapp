@@ -1,0 +1,11 @@
+@import "./components/styles/header.scss";
+@import "./components/styles/process-nav.scss";
+@import "./components/styles/services.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #f7f7f7;
+}

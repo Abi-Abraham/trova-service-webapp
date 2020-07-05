@@ -1,0 +1,64 @@
+.process-nav {
+  background: #018ab8;
+  padding: 15px 5%;
+  position: relative;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 10px 2%;
+  }
+  .procesess {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    .process-titles {
+      color: white;
+      @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+    .badges {
+      position: absolute;
+      top: 0;
+      right: -15px;
+      width: 20px;
+      height: 15px;
+      background: red;
+      color: white;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      @media (max-width: 767px) {
+        right: -10px;
+        width: 13px;
+        top: -7px;
+        font-size: 8px;
+      }
+    }
+    .request {
+      position: relative;
+    }
+    .servicess {
+      position: relative;
+    }
+    .payment {
+      position: relative;
+    }
+  }
+}
+.back-arrow {
+  position: absolute;
+  left: 9%;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (min-width: 320px) and (max-width: 767px) {
+    left: 7%;
+  }
+  .fa-chevron-left {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
