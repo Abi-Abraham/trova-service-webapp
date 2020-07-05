@@ -2,29 +2,27 @@ import React, { useEffect, useRef, useState } from "react";
 import { totalServiceRequests } from "../data/data";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import RequestPersonCard from "./RequestPersonCard";
+import ProcessNav from "./ProcessNav";
 
 const Services = () => {
   let mainSlider = useRef(null);
-  const [selectSlide, setSelectSlide] = useState(0);
+  const [selectSlide, setSelectSlide] = useState(1);
+  const [currentData, setCurrentData] = useState(
+    totalServiceRequests[selectSlide - 1]
+  );
 
   const getCurrent = (current) => {
-    console.log(current);
     setSelectSlide(current);
   };
 
   useEffect(() => {
-    // const sliderItems = mainSlider.current.itemsRef;
-    // console.log(mainSlider.current.handleOnChange);
-    // for (let i = 0; i < sliderItems.length; i++) {
-    //   if (mainSlider.current.itemsRef[i].classList.contains("selected")) {
-    //     console.log(i);
-    //     setSelectSlide(i);
-    //   }
-    // }
-  }, [selectSlide]);
+    setCurrentData(totalServiceRequests[selectSlide - 1]);
+  }, [currentData, selectSlide]);
 
   return (
     <>
+      <ProcessNav presentSlide={currentData} />
       <Carousel
         showThumbs={false}
         showStatus={true}
@@ -55,7 +53,9 @@ const Services = () => {
           </div>
         ))}
       </Carousel>
-      <div>{selectSlide}</div>
+      <div>
+        <RequestPersonCard presentSlide={currentData} />
+      </div>
     </>
   );
 };

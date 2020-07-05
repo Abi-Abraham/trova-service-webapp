@@ -1,7 +1,7 @@
 import React from "react";
 import { totalServiceRequests } from "../data/data";
 
-const ProcessNav = () => {
+const ProcessNav = ({ presentSlide }) => {
   return (
     <div className="process-nav">
       <div className="back-arrow">
@@ -10,11 +10,13 @@ const ProcessNav = () => {
       <div className="procesess">
         <div className="request">
           <h4 className="process-titles">Requests</h4>
-          <span className="badges">{totalServiceRequests.length}</span>
+          <span className="badges">
+            {presentSlide.request.requstPersons.length}
+          </span>
         </div>
         <div className="servicess">
-          <h4 className="process-titles">Servicess</h4>
-          {/* <span className="badges">1</span> */}
+          <h4 className="process-titles">Services</h4>
+          <span className="badges">{totalServiceRequests.length}</span>
         </div>
         <div className="payment">
           <h4 className="process-titles">Payment</h4>

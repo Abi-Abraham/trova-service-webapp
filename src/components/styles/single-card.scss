@@ -1,0 +1,166 @@
+.request-card {
+  background: white;
+  padding: 18px;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 21px -18px #000;
+  .request-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .status {
+      h5 {
+        color: #faba49;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      div {
+        font-size: 13px;
+        color: gray;
+      }
+    }
+    .request-progress-bar {
+      background-color: red;
+    }
+  }
+  .abt-person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .person-details {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      .person-img {
+        width: 55px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .name-loc {
+        h5 {
+          color: #018ab8;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+        h6 {
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 300;
+        }
+      }
+    }
+    .old-deals {
+      display: flex;
+      align-items: center;
+      .shake-hand-icon {
+        margin-right: 5px;
+        .fa-handshake-o {
+          color: #018ab8;
+          font-size: 30px;
+        }
+      }
+      .deal-count {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        margin-left: 5px;
+        letter-spacing: -1px;
+      }
+    }
+  }
+  .person-available-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 7px;
+  }
+  .icons-details {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 3px;
+    .clock-icon {
+      .fa {
+        color: #018ab8;
+        margin-right: 7px;
+        font-size: 16px;
+      }
+    }
+    .availablity {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .all-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    .reschedule-btn {
+      width: 35%;
+      button {
+        width: 100%;
+        border: 2px solid #018ab8;
+        background: white;
+        border-radius: 5px;
+        font-size: 15px;
+        color: #018ab8;
+        padding: 5px;
+        font-weight: 600;
+        @media (max-width: 767px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .accept-btn {
+      width: 35%;
+      button {
+        width: 100%;
+        border: 2px solid #018ab8;
+        background: #018ab8;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        padding: 5px;
+        font-weight: 600;
+        @media (max-width: 767px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .more-btn {
+      width: 10%;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .span-dots {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        span {
+          width: 5px;
+          height: 5px;
+          background: #018ab8;
+          border-radius: 50%;
+        }
+      }
+      .more-text {
+        font-size: 15px;
+        color: #018ab8;
+        font-weight: 600;
+      }
+    }
+  }
+}
