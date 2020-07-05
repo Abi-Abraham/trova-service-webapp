@@ -15,10 +15,16 @@
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 0px;
+        @media (max-width: 365px) {
+          font-size: 15px;
+        }
       }
       div {
         font-size: 13px;
         color: gray;
+        @media (max-width: 365px) {
+          font-size: 11px;
+        }
       }
     }
     .request-progress-bar {
@@ -34,6 +40,9 @@
       display: flex;
       align-items: center;
       width: 70%;
+      @media (max-width: 365px) {
+        width: 80%;
+      }
       .person-img {
         width: 55px;
         overflow: hidden;
@@ -65,6 +74,10 @@
         .fa-handshake-o {
           color: #018ab8;
           font-size: 30px;
+          @media (max-width: 365px) {
+            font-size: 20px;
+            margin-left: 5px;
+          }
         }
       }
       .deal-count {
@@ -73,6 +86,13 @@
         line-height: 16px;
         margin-left: 5px;
         letter-spacing: -1px;
+        @media (max-width: 365px) {
+          font-size: 13px;
+          margin-left: 5px;
+        }
+        @media (max-width: 767px) {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -100,6 +120,9 @@
       @media (max-width: 767px) {
         font-size: 12px;
       }
+      @media (max-width: 365px) {
+        font-size: 11px;
+      }
     }
   }
   .all-buttons {
@@ -120,6 +143,9 @@
         @media (max-width: 767px) {
           font-size: 13px;
         }
+        @media (max-width: 767px) {
+          font-size: 10px;
+        }
       }
     }
     .accept-btn {
@@ -135,6 +161,9 @@
         font-weight: 600;
         @media (max-width: 767px) {
           font-size: 13px;
+        }
+        @media (max-width: 767px) {
+          font-size: 10px;
         }
       }
     }
