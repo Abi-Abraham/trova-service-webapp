@@ -1,6 +1,6 @@
 import React from "react";
 
-const SingleCard = ({ personDetails }) => {
+const Booking = ({ personDetails }) => {
   return (
     <div className="request-card">
       <div className="request-card-header">
@@ -8,7 +8,35 @@ const SingleCard = ({ personDetails }) => {
           <h5>Pending Request</h5>
           <div>{personDetails.reqstdTD}</div>
         </div>
-        <div className="request-progress-bar">1,2,3</div>
+        <div className="request-progress-bar">
+          <div className="progresses">
+            <div className="extra-div request">
+              <div className="progress-num opa-check">1</div>
+              <div className="progress-check">
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div className="progress-title clr-check">Request</div>
+          </div>
+          <div className="progresses">
+            <div className="extra-div service">
+              <div className="progress-num opa-check ">2</div>
+              <div className="progress-check">
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div className="progress-title clr-check">Service</div>
+          </div>
+          <div className="progresses">
+            <div className="extra-div">
+              <div className="progress-num payment opa-check">3</div>
+              <div className="progress-check">
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div className="progress-title clr-check">Payment</div>
+          </div>
+        </div>
       </div>
       <div className="abt-person">
         <div className="person-details">
@@ -66,4 +94,4 @@ const SingleCard = ({ personDetails }) => {
   );
 };
 
-export default SingleCard;
+export default Booking;
