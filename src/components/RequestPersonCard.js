@@ -16,10 +16,8 @@ const RequestPersonCard = ({ presentSlide }) => {
   const loadMore = () => {
     setLoadingData(presentSlide.request.requstPersons.slice(0));
     setdataLength(perPerson.length);
-    console.log(loadingData);
   };
 
-  console.log(dataLength);
 
   return (
     <>
